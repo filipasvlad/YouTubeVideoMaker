@@ -1,20 +1,16 @@
-# Task Manager Application
+#Automated News Video Creation and Publishing Pipeline
+This application automatically generates news videos and posts them on YouTube to generate revenue from views.
 
-## Overview
+##How It Works
+- **Content Processing**:
+It uses web scraping (selenium) to extract textual content from news pages and to find relevant images on the internet for the discovered news story. The text is rewritten using QuillBot to avoid copyright issues.
 
-The Task Manager Application is a web-based tool designed to help users efficiently manage their tasks. It allows users to create, update, delete, and view tasks in an organized manner. The application is built with a focus on simplicity and ease of use, making it ideal for personal task management or small team collaborations.
+- **Audio Preparation**:
 
-## Features
+The text is converted into audio using Microsoft Azure's text-to-speech feature through Balabolka.
+- **Video Creation**:
 
-- **Task Creation**: Add new tasks with titles, descriptions, and due dates.
-- **Task Editing**: Update task details, including status and priority.
-- **Task Deletion**: Remove tasks that are no longer needed.
-- **Task Viewing**: View all tasks in a list format with sorting and filtering options.
-- **User Authentication**: Secure login and registration for users.
-- **Responsive Design**: Accessible on both desktop and mobile devices.
+Once the audio file and downloaded images are ready, the program will create a video compilation using ffmpeg. The images will be displayed with audio in the background, and every 40 seconds, an animation with a subscribe button will appear.
+- **YouTube Upload**:
 
-
-## Technologies Used
-
-- **Backend:**
-  - Python
+Once the video is ready, it will be automatically uploaded to YouTube using Selenium, preparing it to generate revenue from views.
