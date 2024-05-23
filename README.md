@@ -1,8 +1,8 @@
-#Automated News Video Creation and Publishing Pipeline
+# Automated News Video Creation and Publishing Pipeline
 
 This application automatically generates news videos and posts them on YouTube to generate revenue from views.
 
-##How It Works
+## How It Works
 
 - **Content Processing**:
 
